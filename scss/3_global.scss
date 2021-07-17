@@ -420,6 +420,24 @@ background-image: url(https://i.ibb.co/7JvJz9n/thor2.jpg);
 	padding: 5px;
 	font-size: 13px;
 }
+.colorOptionsWrap{
+	display:none;
+	position:absolute;
+	background: $acc_color1;
+	padding: 10px 0;
+	width:105px;
+	border-radius: 10px;
+	text-align: left;
+	margin-top:1px;
+	z-index:4;
+}
+.colorOption{
+	width: 85px;
+	display:block;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
 
 .colorValue{
 	margin-left:10px;
