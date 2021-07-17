@@ -209,6 +209,9 @@ $auditSize: 333px;
 .smallMarble{
 	height: 40px;
 	width: 40px;
+	position: relative;
+	align-items: center;
+	align-content: center;
 }
 .ball{
 	display:inline-block;
@@ -399,6 +402,9 @@ $auditSize: 333px;
 .yellowbg{
 background-image: url(https://i.ibb.co/qjn1MCQ/thor.jpg);
 	margin:auto;
+		position: relative;
+	align-items: center;
+	align-content: center;
 }
 
 .colorSelectWrap{
