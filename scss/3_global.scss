@@ -396,8 +396,11 @@ $auditSize: 333px;
 .purplebg{background:#634FA1}
 .pinkbg{background:#CC5AA2}
 .orangebg{background:#ED8F30}
-.yellowbg{background: url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-2000w,f_auto,q_auto:best/newscms/2019_17/2835276/190425-thor-avengers-endgame-ew-339p.jpg)}
-
+.yellowbg{
+	background: url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-2000w,f_auto,q_auto:best/newscms/2019_17/2835276/190425-thor-avengers-endgame-ew-339p.jpg);
+	width: auto;
+	height: auto;
+}
 
 .colorSelectWrap{
 	text-align: left;
