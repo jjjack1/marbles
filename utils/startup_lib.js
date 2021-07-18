@@ -2,11 +2,6 @@
 // 													startup_lib.js
 // This file has the functions we call during start up
 // ============================================================================================================================
-import (
-	
-	"math/rand",
-	"time"
-)
 var async = require('async');
 
 module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
@@ -295,11 +290,8 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 	startup_lib.build_marble_options = function (id, username, company) {
 		var colors = ['white', 'green', 'blue', 'purple', 'red', 'pink', 'orange', 'black', 'yellow'];
 		var sizes = ['35', '16'];
-		rand.Seed(time.Now().UnixNano())
-		var color_index = colors[rand.Intn(len(colors))];		//build a pseudo random index to pick a color
-		var size_index = misc.getRandomInt(0, sizes.length);
-		
-									//build a random size for this marble
+		var color_index = misc.simple_hash(more_entropy + company) % colors.length;		//build a pseudo random index to pick a color
+		var size_index = misc.getRandomInt(0, sizes.length);							//build a random size for this marble
 		return {
 			color: colors[color_index],
 			size: sizes[size_index],
