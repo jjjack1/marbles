@@ -222,6 +222,7 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 					for (var i in owners) {
 						for (var x = 0; x < marblesEach; x++) {
 							marbles.push(owners[i]);
+							marbles.yellowbg(onwers[i])
 						}
 					}
 					logger.debug('prepared marbles obj', marbles.length, marbles);
@@ -288,16 +289,7 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 
 	// Create random marble arguments (it is not important for it to be random, just more fun)
 	startup_lib.build_marble_options = function (id, username, company) {
-		var colors = ['white', 'green', 'blue', 'purple', 'red', 'pink', 'orange', 'black', 'yellow'];
-		var sizes = ['35', '16'];
-		var color_index = misc.simple_hash(more_entropy + company) % colors.length;		//build a pseudo random index to pick a color
-		var size_index = misc.getRandomInt(0, sizes.length);							//build a random size for this marble
-		return {
-			color: colors[color_index],
-			size: sizes[size_index],
-			owner_id: id,
-			auth_company: process.env.marble_company
-		};
+
 	};
 
 	// Clean Up OLD KVS
