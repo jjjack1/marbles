@@ -196,7 +196,30 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 			}
 		});
 	};
-
+// ============================================================================================================================
+// Get everything we need (owners + marbles + companies)
+//
+// Inputs - none
+//
+// Returns:
+// {
+//	"owners": [{
+//			"id": "o99999999",
+//			"company": "United Marbles"
+//			"username": "alice"
+//	}],
+//	"marbles": [{
+//		"id": "m1490898165086",
+//		"color": "white",
+//		"docType" :"marble",
+//		"owner": {
+//			"company": "United Marbles"
+//			"username": "alice"
+//		},
+//		"size" : 35
+//	}]
+// }
+// ============================================================================================================================
 	// Create marbles and marble owners, owners first
 	startup_lib.create_assets = function (build_marbles_users) {
 		build_marbles_users = misc.saferNames(build_marbles_users);
@@ -222,11 +245,7 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 					for (var i in owners) {
 						for (var x = 0; x < marblesEach; x++) {
 							marbles.push(owners[i]);
-							marbles.yellowbg(onwers[i])
-						}
-					}
-					logger.debug('prepared marbles obj', marbles.length, marbles);
-
+							
 					// --- Create Marbles--- //
 					setTimeout(function () {
 						async.each(marbles, function (owner_obj, marble_cb) { 			//iter through each one
@@ -238,6 +257,10 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 							}
 						});
 					}, cp.getBlockDelay());
+						}
+					}
+					logger.debug('prepared marbles obj', marbles.length, marbles);
+
 				}
 			});
 		}
@@ -289,7 +312,16 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 
 	// Create random marble arguments (it is not important for it to be random, just more fun)
 	startup_lib.build_marble_options = function (id, username, company) {
-
+		var colors = ['white', 'green', 'blue', 'purple', 'red', 'pink', 'orange', 'black', 'yellow'];
+		var sizes = ['35', '16'];
+		var color_index = misc.simple_hash(more_entropy + company) % colors.length;		//build a pseudo random index to pick a color
+		var size_index = misc.getRandomInt(0, sizes.length);							//build a random size for this marble
+		return {
+			color: colors[color_index],
+			size: sizes[size_index],
+			owner_id: id,
+			auth_company: process.env.marble_company
+		};
 	};
 
 	// Clean Up OLD KVS
