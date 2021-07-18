@@ -196,30 +196,7 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 			}
 		});
 	};
-// ============================================================================================================================
-// Get everything we need (owners + marbles + companies)
-//
-// Inputs - none
-//
-// Returns:
-// {
-//	"owners": [{
-//			"id": "o99999999",
-//			"company": "United Marbles"
-//			"username": "alice"
-//	}],
-//	"marbles": [{
-//		"id": "m1490898165086",
-//		"color": "white",
-//		"docType" :"marble",
-//		"owner": {
-//			"company": "United Marbles"
-//			"username": "alice"
-//		},
-//		"size" : 35
-//	}]
-// }
-// ============================================================================================================================
+
 	// Create marbles and marble owners, owners first
 	startup_lib.create_assets = function (build_marbles_users) {
 		build_marbles_users = misc.saferNames(build_marbles_users);
@@ -244,8 +221,11 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 					var marblesEach = 5;												//number of marbles each owner gets
 					for (var i in owners) {
 						for (var x = 0; x < marblesEach; x++) {
-							marbles.push(owners[i])
-							
+							marbles.push(owners[i]);
+						}
+					}
+					logger.debug('prepared marbles obj', marbles.length, marbles);
+
 					// --- Create Marbles--- //
 					setTimeout(function () {
 						async.each(marbles, function (owner_obj, marble_cb) { 			//iter through each one
@@ -257,10 +237,6 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 							}
 						});
 					}, cp.getBlockDelay());
-						}
-					}
-					logger.debug('prepared marbles obj', marbles.length, marbles);
-
 				}
 			});
 		}
