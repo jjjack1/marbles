@@ -162,7 +162,9 @@ $auditSize: 333px;
 	margin-left: 10px;
 	margin-right: 10px;
 	vertical-align: top;
-	background: $acc_color1-5;
+	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/Avengers.jpg);
+
+
 }
 .innerMarbleWrap{
 	min-height:100px;
@@ -191,6 +193,7 @@ $auditSize: 333px;
 }
 .ownerWrap{
 	padding: 20px;
+	background:crimson;
 }
 .companyNameWrap{
 	border-bottom: 1px $acc_color1-5 solid;
@@ -390,7 +393,7 @@ $auditSize: 333px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.green{background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/me.jpg);
+.green{background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/seoul.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -423,7 +426,7 @@ $auditSize: 333px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.greenbg{background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/me.jpg);
+.greenbg{background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/seoul.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
