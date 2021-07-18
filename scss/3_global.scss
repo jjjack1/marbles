@@ -400,7 +400,10 @@ $auditSize: 333px;
 .bluebg{background:#3D76BA}
 .purplebg{background:#634FA1}
 .pinkbg{background:#CC5AA2}
-.orangebg{background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/thor2.jpg)}
+.orangebg{background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/thor2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .yellowbg{
 background-image: url(https://i.ibb.co/7JvJz9n/thor2.jpg);
 	background-repeat: no-repeat;
