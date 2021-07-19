@@ -34,6 +34,7 @@ $auditSize: 333px;
 	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/kingbaby.jpg);
 	
 	background-repeat: no-repeat;
+	margin-right:10px;
 }
 
 #mainPanel{
@@ -694,7 +695,9 @@ $marble_left: 0;
 	position: fixed;
 	top: 60px;
 	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/thinfiler.jpg);
+	background-position: center;
 	background-repeat: no-repeat;
+	background: #343d48;
 	border: 1px #646b73 solid;
 	z-index: 1005;
 	padding: 30px;
