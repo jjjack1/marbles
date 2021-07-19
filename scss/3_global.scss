@@ -190,11 +190,13 @@ $auditSize: 333px;
 	margin: 0;
 }
 .companyPanel{
-	background: $acc_color2;
+
 	padding: 0;
 	border-radius: 3px;
 	margin-bottom: 5px;
-	color: $main_color;
+	
+	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/CPPOSS2.png);
+	background-repeat: no-repeat;
 }
 .floatRight{
 	float: right;
