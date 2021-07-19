@@ -693,13 +693,16 @@ $marble_left: 0;
 	display: none;
 	position: fixed;
 	top: 60px;
-	background: #343d48;
+	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/thinfiler.jpg);
+	background-repeat: no-repeat;
 	border: 1px #646b73 solid;
 	z-index: 1005;
 	padding: 30px;
 	width: 90%;
+	height: 90%;
 	left: 1%;
 	min-width: 720px;
+	min-height: 720px;
 	border-radius: 3px;
 }
 #startUpPanel, #settingsPanel{
