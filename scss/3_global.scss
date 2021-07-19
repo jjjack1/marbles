@@ -707,6 +707,22 @@ $marble_left: 0;
 	border-radius: 3px;
 	margin:auto;
 }
+#startUpPanel2{
+	display: none;
+	position: fixed;
+	top: 60px;
+	background: #343d48;
+	border: 1px #646b73 solid;
+	z-index: 1005;
+	padding: 30px;
+	width: 90%;
+	height: 90%;
+	left: 1%;
+	min-width: 500px;
+	min-height: 500px;
+	border-radius: 3px;
+	margin:auto;
+}
 #startUpPanel, #settingsPanel{
 	position: absolute;
 	top: 0;
