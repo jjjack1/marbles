@@ -28,9 +28,11 @@ $auditSize: 333px;
 	height:60px;
 	line-height: 60px;
 	width:100%;
-	background: $acc_color3;
-	font-size: 15px;
+		font-size: 15px;
 	color: $acc_color1-5;
+	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/ccpos.jpg);
+	background-repeat: no-repeat;
+
 }
 #mainPanel{
 	color: $main_color;
