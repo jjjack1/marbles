@@ -5,6 +5,8 @@ $auditSize: 333px;
 #rightEverything{
 	transition: width 3s;
 	min-width: 765px;
+		background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/baby.jpg);
+	background-repeat: no-repeat;
 }
 
 .rightEverythingOpened{
@@ -19,6 +21,8 @@ $auditSize: 333px;
 	left: 0%;
 	position: fixed;
 	height: 100%;
+		background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/me2.jpg);
+	background-repeat: no-repeat;
 }
 
 /*Main Layout*/
@@ -29,6 +33,8 @@ $auditSize: 333px;
 	background: $acc_color3;
 	font-size: 15px;
 	color: $acc_color1-5;
+		background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/kingbaby.jpg);
+	background-repeat: no-repeat;
 }
 
 #mainPanel{
