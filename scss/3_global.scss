@@ -692,7 +692,7 @@ $marble_left: 0;
 //-- start up panel -- //
 #startUpPanel, #txStoryPanel, #settingsPanel{
 	display: none;
-	position: fixed;
+	
 	top: 60px;
 	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/thinfiler.jpg);
 	background-position: center;
@@ -704,9 +704,10 @@ $marble_left: 0;
 	width: 90%;
 	height: 90%;
 	left: 1%;
-	min-width: 720px;
-	min-height: 720px;
+	min-width: 500px;
+	min-height: 500px;
 	border-radius: 3px;
+	margin:auto;
 }
 #startUpPanel, #settingsPanel{
 	position: absolute;
