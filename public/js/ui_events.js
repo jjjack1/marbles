@@ -171,6 +171,12 @@ $(document).on('ready', function () {
 		if ($('#txStoryPanel').is(':visible')) return;
 		$('#createPanel, #tint, #settingsPanel').fadeOut();
 	});
+		//close create marble panel2222222222222222222
+	$('#tint').click(function () {
+		if ($('#startUpPanel').is(':visible')) return;
+		if ($('#txStoryPanel').is(':visible')) return;
+		$('#createPanel, #tint, #startUpPanel2').fadeOut();
+	});
 
 	//notification drawer
 	$('#notificationHandle').click(function () {
@@ -193,6 +199,13 @@ $(document).on('ready', function () {
 	});
 	$('#closeSettings').click(function () {
 		$('#settingsPanel, #tint').fadeOut();
+	});
+		//settings panel222222222222222222222222222
+	$('#showSettingsPanel').click(function () {
+		$('#startUpPanel2, #tint').fadeIn();
+	});
+	$('#closeSettings').click(function () {
+		$('#startUpPanel2, #tint').fadeOut();
 	});
 
 	//story mode selection
