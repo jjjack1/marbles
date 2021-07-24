@@ -86,7 +86,7 @@ function build_user_panels(data) {
 
 		let disableHtml = '';
 		if (data[i].company  === escapeHtml(bag.marble_company)) {
-			disableHtml = '<SPAN STYLE="font-size:250%"><span style="color: red;"><span class="fa fa-rocket fa-5x disableOwner" title="대출실행">대출실행</span></span></span>';
+			disableHtml = '<span style="color: red;"><span class="fa fa-rocket fa-5x disableOwner" title="대출실행">대출실행</span></span>';
 		}
 
 		html += `<div id="user` + i + `wrap" username="` + data[i].username + `" company="` + data[i].company +
