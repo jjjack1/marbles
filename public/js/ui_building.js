@@ -86,7 +86,7 @@ function build_user_panels(data) {
 
 		let disableHtml = '';
 		if (data[i].company  === escapeHtml(bag.marble_company)) {
-			disableHtml = '<span class="fa fa-rocket disableOwner" title="Disable Owner"><font size="7">sdaf</span></font>';
+			disableHtml = '<font size="7"><span class="fa fa-rocket disableOwner" title="Disable Owner">sdaf</span></font>';
 		}
 
 		html += `<div id="user` + i + `wrap" username="` + data[i].username + `" company="` + data[i].company +
