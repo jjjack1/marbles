@@ -161,7 +161,7 @@ $auditSize: 333px;
 
 // --------- Home ---------
 .marblesWrap{                 /////투명도 나타내기
-	display: inline-block;
+
 	min-width: 235px;
 	text-align: left;
 	
@@ -172,10 +172,10 @@ $auditSize: 333px;
 	margin-left: 10px;
 	margin-right: 10px;
 	vertical-align: top;
-	background-color: rgba(3, 32, 26, 0.7);
-	background-color: transparent 50%;
+	background-color: rgba(3, 32, 26, 0.1);
+	background-color: transparent;
 	flex-direction: column;
-
+	display: flexbox;
 
 }
 .innerMarbleWrap{
