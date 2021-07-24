@@ -78,9 +78,11 @@ function build_user_panels(data) {
 		data[i].id = escapeHtml(data[i].id);
 		data[i].username = escapeHtml(data[i].username);
 		data[i].company = escapeHtml(data[i].company);
+		data[i].marbles = escapeHtml(data[i].marbles);
 		record_company(data[i].company);
 		known_companies[data[i].company].count++;
 		known_companies[data[i].company].visible++;
+		marbles[data[i].marbles].count++;
 
 		console.log('[ui] building owner panel ' + data[i].id);
 
@@ -103,7 +105,7 @@ function build_user_panels(data) {
 		$('.companyPanel[company="' + data[i].company + '"]').find('.ownerWrap').append(html);
 		$('.companyPanel[company="' + data[i].company + '"]').find('.companyVisible').html(known_companies[data[i].company].visible);
 		$('.companyPanel[company="' + data[i].company + '"]').find('.companyCount').html(known_companies[data[i].company].count);
-		$('.companyPanel[company="' + data[i].marbles + '"]').find('.marblesCount').html(marble[data[i].marbles].count);
+		$('.companyPanel[company="' + data[i].marbles + '"]').find('.marblesCount').html(marbles[data[i].marbles].count);
 	}
 
 	//drag and drop marble
