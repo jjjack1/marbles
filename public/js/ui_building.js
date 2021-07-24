@@ -157,8 +157,8 @@ function build_company_panel(company) {
 
 	var html = `<div class="companyPanel" company="` + company + `">
 					<div class="companyNameWrap ` + mycss + `">
-			<font color="red"><font size="5"><span class="companyName">Total&nbsp;members&nbsp;-&nbsp;&nbsp;</span></font></font>   
-					<font size="5"><font color="red"><span class="companyVisible">0</span>/<span class="companyCount">0</span></font></font>`;
+			<font color="red"><font size="6"><span class="companyName">Total&nbsp;members&nbsp;-&nbsp;&nbsp;</span></font></font>   
+					<font size="6"><font color="red"><span class="companyVisible">0</span>/<span class="companyCount">0</span></font></font>`;
 	if (company === escapeHtml(bag.marble_company)) {
 		html += '<span class="fa fa-exchange floatRight"></span>';
 	} else {
