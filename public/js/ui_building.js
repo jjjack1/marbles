@@ -103,6 +103,7 @@ function build_user_panels(data) {
 		$('.companyPanel[company="' + data[i].company + '"]').find('.ownerWrap').append(html);
 		$('.companyPanel[company="' + data[i].company + '"]').find('.companyVisible').html(known_companies[data[i].company].visible);
 		$('.companyPanel[company="' + data[i].company + '"]').find('.companyCount').html(known_companies[data[i].company].count);
+		$('.companyPanel[company="' + data[i].marbles + '"]').find('.marblesCount').html(marbles[data[i].marbles].count);
 	}
 
 	//drag and drop marble
@@ -157,7 +158,7 @@ function build_company_panel(company) {
 
 	var html = `<div class="companyPanel" company="` + company + `">
 					<div class="companyNameWrap ` + mycss + `">
-					<span class="companyName">` + company + `&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
+					<span class="marblesCount">0</span>
 			<font color="red"><font size="7"><span class="companyName">대출 대기자 명단&nbsp;&nbsp;-&nbsp;&nbsp;</span></font></font>   
 					<font size="7"><font color="red"><span class="companyVisible">0</span>/<span class="companyCount">0</span></font></font>`;
 	if (company === escapeHtml(bag.marble_company)) {
