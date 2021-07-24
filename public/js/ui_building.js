@@ -70,6 +70,7 @@ function build_user_panels(data) {
 	for (var x in known_companies) {
 		known_companies[x].count = 0;
 		known_companies[x].visible = 0;							//reset visible counts
+		marbles[x].count =0;
 	}
 
 	for (var i in data) {
