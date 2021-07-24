@@ -24,7 +24,7 @@ $auditSize: 333px;
 }
 
 /*Main Layout*/
-#navPanel{   //A++나오는곳 
+#navPanel{   //A++나오는곳  배경
 	height:60px;
 	line-height: 60px;
 	width:100%;
@@ -387,8 +387,7 @@ $auditSize: 333px;
 	
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	background-image:url(https://raw.githubusercontent.com/jjjack1/marbles/master/ban2.jpg);
-	background-repeat: no-repeat;
+	background-color: transparent;
 }
 
 
