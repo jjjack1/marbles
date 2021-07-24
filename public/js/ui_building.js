@@ -147,7 +147,7 @@ function build_user_panels(data) {
 	$('#totalUsers').html(data.length);
 }
 
-//build company wrap
+//build company wrap                ----------------------  The avengers 5/5 ------ font color:maroon
 function build_company_panel(company) {
 	company = escapeHtml(company);
 	console.log('[ui] building company panel ' + company);
@@ -157,8 +157,8 @@ function build_company_panel(company) {
 
 	var html = `<div class="companyPanel" company="` + company + `">
 					<div class="companyNameWrap ` + mycss + `">
-			<font color="maroon"><span class="companyName">` + company + `&nbsp;-&nbsp;</span></font>
-					<span class="companyVisible">0</span>/<span class="companyCount">0</span>`;
+			<font color="maroon"><span class="companyName">` + company + `&nbsp;-&nbsp;</span></font>  
+					<font color="maroon"><span class="companyVisible">0</span>/<span class="companyCount">0</span>`</font>;
 	if (company === escapeHtml(bag.marble_company)) {
 		html += '<span class="fa fa-exchange floatRight"></span>';
 	} else {
