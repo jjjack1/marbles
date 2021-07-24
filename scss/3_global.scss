@@ -174,8 +174,8 @@ $auditSize: 333px;
 	vertical-align: top;
 	background-color: rgba(3, 32, 26, 0.3);
 	background-color: transparent 50%;
-	flex-direction: column;
-	display: block;
+	flex-direction: column-reverse;
+	display: inline-block;
 
 }
 .innerMarbleWrap{
