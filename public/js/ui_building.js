@@ -70,7 +70,6 @@ function build_user_panels(data) {
 	for (var x in known_companies) {
 		known_companies[x].count = 0;
 		known_companies[x].visible = 0;							//reset visible counts
-		marbles[x].count =0;
 	}
 
 	for (var i in data) {
@@ -79,11 +78,9 @@ function build_user_panels(data) {
 		data[i].id = escapeHtml(data[i].id);
 		data[i].username = escapeHtml(data[i].username);
 		data[i].company = escapeHtml(data[i].company);
-		data[i].marbles = escapeHtml(data[i].marbles);
 		record_company(data[i].company);
 		known_companies[data[i].company].count++;
 		known_companies[data[i].company].visible++;
-		marbles[data[i].marbles].count++;
 
 		console.log('[ui] building owner panel ' + data[i].id);
 
@@ -106,7 +103,6 @@ function build_user_panels(data) {
 		$('.companyPanel[company="' + data[i].company + '"]').find('.ownerWrap').append(html);
 		$('.companyPanel[company="' + data[i].company + '"]').find('.companyVisible').html(known_companies[data[i].company].visible);
 		$('.companyPanel[company="' + data[i].company + '"]').find('.companyCount').html(known_companies[data[i].company].count);
-		$('.companyPanel[company="' + data[i].marbles + '"]').find('.marblesCount').html(marbles[data[i].marbles].count);
 	}
 
 	//drag and drop marble
@@ -161,7 +157,7 @@ function build_company_panel(company) {
 
 	var html = `<div class="companyPanel" company="` + company + `">
 					<div class="companyNameWrap ` + mycss + `">
-					<span class="marblesCount">0</span>
+					<span class="companyName">` + company + `&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
 			<font color="red"><font size="7"><span class="companyName">대출 대기자 명단&nbsp;&nbsp;-&nbsp;&nbsp;</span></font></font>   
 					<font size="7"><font color="red"><span class="companyVisible">0</span>/<span class="companyCount">0</span></font></font>`;
 	if (company === escapeHtml(bag.marble_company)) {
