@@ -61,7 +61,7 @@ function size_user_name(name) {
 	return style;
 }
 
-//build all user panels
+//build all user panels                                                                     //////////` + toTitleCase(data[i].username) + `  이걸로 유저이름 쪽에 i/설정
 function build_user_panels(data) {
 
 	//reset
@@ -92,7 +92,7 @@ function build_user_panels(data) {
 		html += `<div id="user` + i + `wrap" username="` + data[i].username + `" company="` + data[i].company +
 			`" owner_id="` + data[i].id + `" class="marblesWrap ` + colorClass + `">
 					<div class="legend" style="` + size_user_name(data[i].username) + `">
-						` + toTitleCase(data[i].username) + `                                               // i개의 지갑 유저 이름 
+						` + toTitleCase(data[i].username) + `
 						` + toTitleCase(data[i].username) + `
 						` + disableHtml + `
 					</div>
