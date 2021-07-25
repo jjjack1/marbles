@@ -158,6 +158,7 @@ function build_company_panel(company) {
 
 	var html = `<div class="companyPanel" company="` + company + `">
 					<div class="companyNameWrap ` + mycss + `">
+					var html = `<div class="companyPanel" company="` + company + `">
 					<span class="companyCount">0</span>                 ------------------------연습장
 			<font color="red"><font size="7"><span class="companyName">대출 대기자 명단&nbsp;&nbsp;-&nbsp;&nbsp;</span></font></font>   
 					<font size="7"><font color="red"><span class="companyVisible">0</span>/<span class="companyCount">0</span></font></font>`;
