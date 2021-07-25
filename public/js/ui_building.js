@@ -149,7 +149,7 @@ function build_user_panels(data) {
 
 //build company wrap                ----------------------  The avengers 5/5 ------ font color:maroon
 function build_company_panel(company) {
-	//const mcount= require("../../utils/websocket_server_side")  // -----------------------------------다른파일에 있는 함수 불러오기
+	const mcount= require("../../utils/websocket_server_side")  // -----------------------------------다른파일에 있는 함수 불러오기
 	company = escapeHtml(company);
 	console.log('[ui] building company panel ' + company);
 
