@@ -272,7 +272,7 @@ module.exports = function (cp, fcw, logger) {
 					logger.debug('[checking] number of owners:', data.owners.length);
 					logger.debug('[checking] number of marbles:', data.marbles.length);
 					rr=data.marbles.length
-				
+					return rr;
 				}
 
 				data.owners = organize_usernames(data.owners);
@@ -296,7 +296,7 @@ module.exports = function (cp, fcw, logger) {
 			}
 		});
 	}
-	return rr;
+	
 module.exports = read_everything();
 	// organize the marble owner list
 	function organize_usernames(data) {
