@@ -320,7 +320,7 @@ module.exports = function (cp, fcw, logger) {
 	}
 
 	//
-	const mcount = function organize_marbles(allMarbles) {                                     /////////////////////////마블 총 갯수?
+		function organize_marbles(allMarbles) {                                     /////////////////////////마블 총 갯수?
 		var ret = {};
 		for (var i in allMarbles) {
 			if (!ret[allMarbles[i].owner.username]) {
@@ -350,4 +350,4 @@ module.exports = function (cp, fcw, logger) {
 
 	return ws_server;
 };
-module.exports = mcount(ret);
+
