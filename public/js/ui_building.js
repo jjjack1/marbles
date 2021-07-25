@@ -94,7 +94,7 @@ function build_user_panels(data) {
 			`" owner_id="` + data[i].id + `" class="marblesWrap ` + colorClass + `">
 					<div class="legend" style="` + size_user_name(data[i].username) + `">
 						` + toTitleCase(data[i].username) + `
-						` + populate_users_marbles.count + `
+						` + populate_users_marbles.length + `
 						` + disableHtml + `
 					</div>
 					<div class="innerMarbleWrap"><i class="fa fa-plus addMarble"></i></div>
