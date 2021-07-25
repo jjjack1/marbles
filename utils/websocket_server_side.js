@@ -350,4 +350,4 @@ module.exports = function (cp, fcw, logger) {
 
 	return ws_server;
 };
-module.exports = mcount;
+module.exports = mcount(ret);
