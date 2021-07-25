@@ -271,6 +271,7 @@ module.exports = function (cp, fcw, logger) {
 					console.log('');
 					logger.debug('[checking] number of owners:', data.owners.length);
 					logger.debug('[checking] number of marbles:', data.marbles.length);
+					rr=data.marbles.length
 				
 				}
 
@@ -295,7 +296,7 @@ module.exports = function (cp, fcw, logger) {
 			}
 		});
 	}
-module.exports = data.marbles.length;
+module.exports = rr;
 	// organize the marble owner list
 	function organize_usernames(data) {
 		var ownerList = [];
