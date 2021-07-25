@@ -92,7 +92,7 @@ function build_user_panels(data) {
 		html += `<div id="user` + i + `wrap" username="` + data[i].username + `" company="` + data[i].company +
 			`" owner_id="` + data[i].id + `" class="marblesWrap ` + colorClass + `">
 					<div class="legend" style="` + size_user_name(data[i].username) + `">
-						` + toTitleCase(data[2].username) + `
+						` + toTitleCase(data[i].username) + `                                               // i개의 지갑 유저 이름 
 						
 						` + disableHtml + `
 					</div>
