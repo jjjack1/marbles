@@ -4,7 +4,7 @@
 /* exported build_a_tx, marbles */
 
 var marbles = {};
-const rr= require("../../utils/websocket_server_side")  // -----------------------------------다른파일에 있는 함수 불러오기
+//const rr= require("../../utils/websocket_server_side")  // -----------------------------------다른파일에 있는 함수 불러오기
 // =================================================================================
 //	UI Building
 // =================================================================================
@@ -49,6 +49,7 @@ function populate_users_marbles(msg) {
 	for (var i in msg.marbles) {
 		build_marble(msg.marbles[i]);
 	}
+	return msg.marbles[i];
 }
 
 //crayp resize - dsh to do, dynamic one
@@ -93,7 +94,7 @@ function build_user_panels(data) {
 			`" owner_id="` + data[i].id + `" class="marblesWrap ` + colorClass + `">
 					<div class="legend" style="` + size_user_name(data[i].username) + `">
 						` + toTitleCase(data[i].username) + `
-						` + build_marble() + `
+						` + populate_users_marbles + `
 						` + disableHtml + `
 					</div>
 					<div class="innerMarbleWrap"><i class="fa fa-plus addMarble"></i></div>
