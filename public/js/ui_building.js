@@ -4,7 +4,7 @@
 /* exported build_a_tx, marbles */
 
 var marbles = {};
-var rr= require("../../utils/websocket_server_side")  // -----------------------------------다른파일에 있는 함수 불러오기
+//var rr= require("../../utils/websocket_server_side")  // -----------------------------------다른파일에 있는 함수 불러오기
 // =================================================================================
 //	UI Building
 // =================================================================================
@@ -94,7 +94,6 @@ function build_user_panels(data) {
 			`" owner_id="` + data[i].id + `" class="marblesWrap ` + colorClass + `">
 					<div class="legend" style="` + size_user_name(data[i].username) + `">
 						` + toTitleCase(data[i].username) + `
-						` + rr + `
 						` + disableHtml + `
 					</div>
 					<div class="innerMarbleWrap"><i class="fa fa-plus addMarble"></i></div>
@@ -160,7 +159,7 @@ function build_company_panel(company) {
 	var html = `<div class="companyPanel" company="` + company + `">
 					<div class="companyNameWrap ` + mycss + `">
 					<span class="companyName">` + company + `&nbsp;-&nbsp;</span>
-					<span class="rr">0</span>                 ------------------------연습장
+					
 			<font color="red"><font size="7"><span class="companyName">대출 대기자 명단&nbsp;&nbsp;-&nbsp;&nbsp;</span></font></font>   
 					<font size="7"><font color="red"><span class="companyVisible">0</span>/<span class="companyCount">0</span></font></font>`;
 	if (company === escapeHtml(bag.marble_company)) {
