@@ -271,8 +271,7 @@ module.exports = function (cp, fcw, logger) {
 					console.log('');
 					logger.debug('[checking] number of owners:', data.owners.length);
 					logger.debug('[checking] number of marbles:', data.marbles.length);
-					rr=data.marbles.length
-					return rr;
+				
 				}
 
 				data.owners = organize_usernames(data.owners);
