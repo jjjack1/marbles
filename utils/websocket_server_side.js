@@ -297,7 +297,7 @@ module.exports = function (cp, fcw, logger) {
 		});
 	}
 	
-module.exports = read_everything();
+//module.exports = read_everything();
 	// organize the marble owner list
 	function organize_usernames(data) {
 		var ownerList = [];
