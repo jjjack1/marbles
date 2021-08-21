@@ -288,7 +288,7 @@ module.exports = function (logger, cp, fcw, marbles_lib, ws_server) {
 
 	// Create random marble arguments (it is not important for it to be random, just more fun)
 	startup_lib.build_marble_options = function (id, username, company) {
-		var colors = ['white', 'green', 'blue', 'purple', 'red', 'pink', 'orange', 'black', 'yellow'];
+		var colors = ['white', 'green', 'blue', 'purple', 'red', 'pink', 'orange', 'black'];
 		var sizes = ['35', '16'];
 		var color_index = misc.getRandomInt(0, colors.length);		//build a pseudo random index to pick a color
 		var size_index = misc.getRandomInt(0, sizes.length);							//build a random size for this marble
