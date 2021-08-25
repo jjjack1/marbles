@@ -2,13 +2,13 @@
 	"cred_filename": "connection_profile_cs.json",
 	"use_events": true,
 	"keep_alive_secs": 120,
-	"company": "The Avengers",
-	"usernames": [
-		"Sunghye",
-		"Jinhyun",
-		"Jeong Heon",
+    "company": "C-PPOS",
+    "usernames": [
+		"SUNGWOO",
+		"JeongHeon",
 		"Kyungmin",
-		"Sungwooooo"
+		"SungHye",
+		"Jinhyeon"
 	],
 	"port": 32001
 }
