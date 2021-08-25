@@ -2,13 +2,13 @@
     "cred_filename": "connection_profile_local.json",
     "use_events": true,
     "keep_alive_secs": 120,
-    "company": "The Avengers",
+    "company": "씨포스",
     "usernames": [
-		"Sunghye",
-		"Jinhyun",
-		"Jeong Heon",
-		"Kyungmin",
-		"Sungwooooo"
+		"권성우",
+		"오정헌",
+		"이경민",
+		"최성혜",
+		"박진현"
     ],
     "port": 3001
 }
